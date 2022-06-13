@@ -49,15 +49,15 @@ function WordCounter() {
         alignItems: "center",
       }}
     >
-      <label>Font size picker</label>
-      <input
+      <label class="font-size">Font size picker</label>
+      <input 
         type="range"
         id="fontSize-input"
         min={16}
         max={32}
         onChange={fontSizeHandler}
       />
-      <label>Word limit input</label>
+      <label class="Word-limit">Word limit input</label>
       <input
         type="number"
         id="char-limit-input"
@@ -65,7 +65,7 @@ function WordCounter() {
         min={50}
         onChange={wordLimitHandler}
       />
-      <textarea
+      <textarea class="textarea"
         type="textarea"
         maxLength={wordLimit}
         onChange={onChangeHandler}
